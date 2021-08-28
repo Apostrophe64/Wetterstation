@@ -1,7 +1,5 @@
 # Wetterstation
-Wetter und Energiemessung
-
-Messung von
+Wetter und Energiemessung von
 - Temperatur
 - Luftfeuchte
 - Luftdruck
