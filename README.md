@@ -45,7 +45,7 @@ und anstatt der 9V Blockbatterie 3 AAA Batterien verwendet.
 Stromverbrauch der ProMinis:
 Aktuelle Messwerte: CPU 16MHz: 10,75mA
                     CPU 8MHz:   6,32mA
-                    CPU 1MHz:   2,28mA (Software läuft aber nicht :-( )
+                    CPU 1MHz:   2,28mA (Software läuft aber nicht)
 Stromaufnahme mit PCF8583: ca. 7,5µA bzw. 39,2µA wenn Eingang geschlossen ist.
 
 Sleep:  5.5µA (Ohne Spannungsregler, mit 3xAAA Batterien)
@@ -73,9 +73,10 @@ Mittlerer Stromverbrach = ~14µA
 P = 4.5V * 14µA = 62,6µW (~30% Ersparnis gegenüber der 16MHz Version)
 ========================
 
-AAA Alkaline Batterie ca. 900mAh (Selbstendladung ca. 35µA)
+// AAA Alkaline Batterie ca. 900mAh (Selbstendladung ca. 35µA)
 Geschätzte Laufzeit 16MHz: 900mAh / (20+35)µA = 16363 Stunden = 682 Tage = 1,8 Jahre 
 Geschätzte Laufzeit 8MHz:  900mAh / (14+35)µA = 18367 Stunden = 765 Tage = 2,1 Jahre
+
 
 In der Tat läuft einer der Sender derzeit bereits 15 Monate ohne Batteriewechsel!
 Allerdings gibt es noch ein  Problem mit der Stromaufnahme des Senders mit dem Luftdruckmesser.
