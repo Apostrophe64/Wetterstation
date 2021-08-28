@@ -43,39 +43,45 @@ Um den Stromverbrauch der Sender zu minimieren, habe ich den Spannungsregler und
 und anstatt der 9V Blockbatterie 3 AAA Batterien verwendet.
 
 Stromverbrauch der ProMinis:
-Aktuelle Messwerte: CPU 16MHz: 10,75mA
-                    CPU 8MHz:   6,32mA
-                    CPU 1MHz:   2,28mA (Software läuft aber nicht)
+
+Taktfrequenz | Stromaufnahme
+-------------|--------------
+CPU 16MHz | 10,75mA
+CPU 8MHz  | 6,32mA
+CPU 1MHz  |  2,28mA (Software läuft aber nicht)
+
 Stromaufnahme mit PCF8583: ca. 7,5µA bzw. 39,2µA wenn Eingang geschlossen ist.
 
 Sleep:  5.5µA (Ohne Spannungsregler, mit 3xAAA Batterien)
 
-Messzeiten der Sensoren:
-DHT22 Read:        5,3ms
-BMP085 Read:      34,0ms
-DS1820 Read:      28,0ms
-433MHz transmitt; 120.0ms
+Sensor | Messzeiten der Sensoren
+------------|--------------------
+DHT22 Read  |        5,3ms
+BMP085 Read |     34,0ms
+DS1820 Read |     28,0ms
+433MHz transmitt | 120.0ms
+
 ---> Aktivezeit: 5,3+34+3*120.0=400ms
 
-Messzyklus: 300 Sekunden
-Sleepzeit: 8 Sekunden
-Passivzeit (Ohne Messung) 16µS alle 8 Sekuden (Vernachlässigbar)
+Messzyklus: 300 Sekunden  
+Sleepzeit: 8 Sekunden  
+Passivzeit (Ohne Messung) 16µS alle 8 Sekuden (Vernachlässigbar)  
 
-Mittlerer Stromverbrauch:
-[400ms * 10,75mA +(300000 - 400ms) * 0,0055mA] / 300000 = 0,0198mA = 19,8µA
-Mittlerer Stromverbrach = ~20µA
-P = 4,5V * 20µA = 89µW
-======================
+Mittlerer Stromverbrauch (Ohne Spannungsregler, mit 3xAAA Batterie, 16MHz):  
+(400ms * 10,75mA +(300000 - 400ms) * 0,0055mA) / 300000 = 0,0198mA = 19,8µA  
+Mittlerer Stromverbrach = ~20µA  
+P = 4,5V * 20µA = **89µW**
 
-Mittlerer Stromverbrauch (Ohne Spannungsregler, mit 3xAAA Batterien, 8MHz):
-[400ms * 6,32mA +(300000 - 400ms) * 0,0055mA] / 300000 = 0,0139mA = 13,9µA
-Mittlerer Stromverbrach = ~14µA
-P = 4.5V * 14µA = 62,6µW (~30% Ersparnis gegenüber der 16MHz Version)
-========================
 
-// AAA Alkaline Batterie ca. 900mAh (Selbstendladung ca. 35µA)
-Geschätzte Laufzeit 16MHz: 900mAh / (20+35)µA = 16363 Stunden = 682 Tage = 1,8 Jahre 
-Geschätzte Laufzeit 8MHz:  900mAh / (14+35)µA = 18367 Stunden = 765 Tage = 2,1 Jahre
+Mittlerer Stromverbrauch (Ohne Spannungsregler, mit 3xAAA Batterien, 8MHz):  
+(400ms * 6,32mA +(300000 - 400ms) * 0,0055mA) / 300000 = 0,0139mA = 13,9µA  
+Mittlerer Stromverbrach = ~14µA  
+P = 4.5V * 14µA = **62,6µW** (~30% Ersparnis gegenüber der 16MHz Version)  
+
+
+// AAA Alkaline Batterie ca. 900mAh (Selbstendladung ca. 35µA)  
+Geschätzte Laufzeit 16MHz: 900mAh / (20+35)µA = 16363 Stunden = 682 Tage = **1,8 Jahre**   
+Geschätzte Laufzeit 8MHz:  900mAh / (14+35)µA = 18367 Stunden = 765 Tage = **2,1 Jahre**  
 
 
 In der Tat läuft einer der Sender derzeit bereits 15 Monate ohne Batteriewechsel!
