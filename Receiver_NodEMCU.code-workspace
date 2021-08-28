@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "Receiver_NodEMCU"
+		}
+	],
+	"settings": {
+		"terminal.integrated.env.windows": {
+			"PATH": "C:\\Users\\Martin\\.platformio\\penv\\Scripts;C:\\Users\\Martin\\.platformio\\penv;C:\\Program Files\\Intel\\TXE Components\\TCS\\;C:\\Program Files\\Broadcom\\Broadcom 802.11 Network Adapter\\Driver;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files\\Intel\\TXE Components\\IPT\\;C:\\Program Files\\android\\platform-tools;C:\\Program Files\\GNU\\GnuPG\\pub;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\Skype\\Phone\\;C:\\Program Files\\IVI Foundation\\VISA\\WinNT\\Bin\\;C:\\Program Files\\LLVM\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft VS Code Insiders\\bin;C:\\Users\\Martin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Martin\\AppData\\Local\\atom\\bin;C:\\Users\\Martin\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Program Files\\Microsoft VS Code Insiders\\bin;C:\\Program Files\\Intel\\TXE Components\\TCS\\;C:\\Program Files\\Broadcom\\Broadcom 802.11 Network Adapter\\Driver;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files\\Intel\\TXE Components\\IPT\\;C:\\Program Files\\android\\platform-tools;C:\\Program Files\\GNU\\GnuPG\\pub;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\Skype\\Phone\\;C:\\Program Files\\IVI Foundation\\VISA\\WinNT\\Bin\\;C:\\Program Files\\LLVM\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft VS Code Insiders\\bin;C:\\Users\\Martin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Martin\\AppData\\Local\\atom\\bin;C:\\Users\\Martin\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Program Files\\Microsoft VS Code Insiders\\bin",
+			"PLATFORMIO_CALLER": "vscode"
+		}
+	}
+}
