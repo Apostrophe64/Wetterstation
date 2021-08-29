@@ -12,6 +12,9 @@ Wetter und Energiemessung von
 Das Projekt läuft bei mir seit etwa Mitte 2017 mit 8 Transmittern. Teilweise im Außenbereich.
 Bis auf die Energieverbrauchsmessung laufen alle Sender im Batteriebetrieb. 
 
+Dies ist einer der Transmitter zur Messung von Temperatur und Luftfeuchte. Noch mit Spannungsregler und 9V Blockbatterie
+![Transmitter](https://github.com/Apostrophe64/Wetterstation/blob/main/Images/Sender%20zur%20Messung%20der%20Luftfeuchte.jpg)
+
 Der grobe Aufbau ist wie folgt:
 Es werden derzeit 8 433MHz Sender an einer Empfangsstation betrieben.
 Die Sender bestehen aus einem Arduino ProMini mit jeweils einem 433MHz Transmitter und entsprechenden Sensoren.
@@ -25,13 +28,21 @@ Als Sensoren verwende ich die folgenden Komponenten:
 - SN74HC14 Schmitt Trigger zum Entprellen des Readrelais bei der Messung der Windgeschwindigkeit.
 - TCRT5000 Infrarot Relexlichtschranke zur Ablesung der Strom/Gas/Wasser-zähler
 - Hallsensor zur Ablesung des Wasserzählers. (War leider nach einem Wechsel des Wasserzählers notwendig.)
+- RXB8 V2.0 433MHz Empfangsmodule. Dieses Modul ist sehr viel besser als das Empfangsmodule das bei den Sets aus Empfanger und Sender dabei ist.
+- 433MHz Sender/Empfangs set (Die Empfänger in den Sets die ich gekauft habe waren nicht sehr empfindlich)
+
+Dies ist der Transmitter zur Messung des Verbrauchs von Strom, Gas und Wasser
+![Transmitter](https://github.com/Apostrophe64/Wetterstation/blob/main/Images/Sender%20zur%20Verbrauchsmessung%20Innen.jpg)
+
 
 Der erste Empfänger besteht ebenfalls aus einem Arduino ProMini, der zur Anzeige der Messdaten
 ein 4 zeiliges LCD verwendete. Zur Übertragung ins WLAN verwendet dieser ein ESP8266 ESP-01S.
+![Empfänger1](https://github.com/Apostrophe64/Wetterstation/blob/main/Images/Erster%20Empf%C3%A4nger%20in%20Betrieb.jpg)
 
 Der zweite Empfänger besteht aus einem ESP8260NodeMCU mit 433MHz Receiver und einem 4.3" SPI Display
 zur Darstellung der Messdaten. Dieser reicht die Daten zusätzlich an einem Raspberry PI weiter, auf dem
 Emoncms installiert ist. Außerdem enthält er einen kleinen Webserver, der eine Html Seite mit allen Messwerten ausliefert.
+![Empfänger2](https://github.com/Apostrophe64/Wetterstation/blob/main/Images/Zweiter%20Empf%C3%A4nger.jpg)
 
 Die Entwicklung erfolgte mit Microsoft Visual Studio Code und Platformio.
 Alle notwendigen Einstellungen wie Netzwerkadressen, SSID, API Keys Passwörter sind direkt im Quellcode
