@@ -39,7 +39,7 @@ Der erste Empfänger besteht ebenfalls aus einem Arduino ProMini, der zur Anzeig
 ein 4 zeiliges LCD verwendete. Zur Übertragung ins WLAN verwendet dieser ein ESP8266 ESP-01S.
 ![Empfänger1](https://github.com/Apostrophe64/Wetterstation/blob/main/Images/Erster%20Empf%C3%A4nger%20in%20Betrieb.jpg)
 
-Der zweite Empfänger besteht aus einem ESP8260NodeMCU mit 433MHz Receiver und einem 4.3" SPI Display
+Der zweite Empfänger besteht aus einem ESP8260NodeMCU mit 433MHz Receiver und einem kleinen SPI Display
 zur Darstellung der Messdaten. Dieser reicht die Daten zusätzlich an einem Raspberry PI weiter, auf dem
 Emoncms installiert ist. Außerdem enthält er einen kleinen Webserver, der eine Html Seite mit allen Messwerten ausliefert.
 ![Empfänger2](https://github.com/Apostrophe64/Wetterstation/blob/main/Images/Zweiter%20Empf%C3%A4nger.jpg)
